@@ -1,0 +1,19 @@
+{
+  "name": "child_module",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "yarn run clean && webpack-cli"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "file-loader": "^5.0.2",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.5",
+    "rimraf": "3.0.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
